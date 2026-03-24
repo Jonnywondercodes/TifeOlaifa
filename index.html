@@ -5,20 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Boluwatife Olaifa — IT Project Manager</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<!--  Mobile Nav Drawer-->
+  <div class="nav-drawer" id="navDrawer">
+      <button class="nav-drawer-close" id="navClose" aria-label="Close menu"> <span></span>
+  <span></span></button>
+   <a href="#expertise" onclick="closeDrawer()">Expertise</a>
+    <a href="#projects" onclick="closeDrawer()">Projects</a>
+    <a href="#testimonials" onclick="closeDrawer()">Testimonials</a>
+    <a href="#contact" onclick="closeDrawer()">Contact</a>
+  </div>
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">Boluwatife Olaifa</a>
-  <ul class="nav-links">
+  <div class="nav-right">
+<ul class="nav-links">
     <li><a href="#expertise">Expertise</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#testimonials">Testimonials</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+  </div>
+  
 </nav>
 
 <!-- HERO -->
@@ -123,7 +138,7 @@
 
 <hr class="divider">
 
-<!-- TOOLS -->
+<!-- Section for tools -->
 <section>
   <div class="container">
     <div class="section-eyebrow">Tools & Methodologies</div>
@@ -211,14 +226,6 @@
           </div>
         </div>
       </div>
-      <div class="add-project">
-        <div class="add-icon">＋</div>
-        <span>Add next project</span>
-      </div>
-      <div class="add-project">
-        <div class="add-icon">＋</div>
-        <span>Add next project</span>
-      </div>
     </div>
   </div>
 </section>
@@ -297,6 +304,6 @@
   <span>IT Project Manager · Agile & Hybrid Delivery</span>
   <span>© 2025</span>
 </footer>
-
+<script src="index.js"></script>
 </body>
 </html>
